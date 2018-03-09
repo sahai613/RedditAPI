@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mrecyclerView=findViewById(R.id.recyclerListview);
         mrecyclerView.setHasFixedSize(true);
-        mrecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mrecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         mrecyclerView.setItemAnimator(new DefaultItemAnimator());
         //Retrieve the queue from the connectionmanager class
 //        RequestQueue queue = ConnectionManager.getInstance(this);
